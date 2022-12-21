@@ -1,0 +1,34 @@
+#include<stdio.h>
+int main(){
+    int A, B, i;
+    scanf("%d", &A);
+    scanf("%d", &B);
+    for(i=A; i<=100 ; i++){
+        if(A==0 && B==0){
+            break;
+        }
+        if(A<-100 || B>100){
+            break;
+        }
+        if(i>B){
+            break;
+        }
+        
+        printf("%d", i);
+        i=i++;
+    
+    }
+    for(i=B; i<=100 ; i++){
+        
+       if(B<-100 || A>100){
+            break;
+        }
+        if(i>A){
+            break;
+        }
+                
+        printf("%d", i);
+        i=i++;
+    
+    }
+}
